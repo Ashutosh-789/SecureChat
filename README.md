@@ -12,15 +12,15 @@ The project demonstrates the implementation of **hybrid encryption**, **client-s
 
 ==> Features
 
-- 🔒 End-to-End Encrypted Messaging
-- 🔑 RSA-2048 Secure Key Exchange
-- 🔐 DES/CBC/PKCS5Padding Message Encryption
-- 💬 Real-Time Client-Server Communication
-- 🖥 WhatsApp-inspired Java Swing GUI
-- 👥 Multiple Client Support
-- 📡 Socket Programming using TCP
-- 🛡 Encryption & Decryption Visualization
-- 🔍 Secure Message Transmission
+- End-to-End Encrypted Messaging
+- RSA-2048 Secure Key Exchange
+- DES/CBC/PKCS5Padding Message Encryption
+- Real-Time Client-Server Communication
+- WhatsApp-inspired Java Swing GUI
+- Multiple Client Support
+- Socket Programming using TCP
+- Encryption & Decryption Visualization
+- Secure Message Transmission
 
 ---
 
@@ -39,21 +39,41 @@ The project demonstrates the implementation of **hybrid encryption**, **client-s
 ==> Project Structure
 
 ```
-SecureChat
+==> Project Structure
+
+```
+SecureChat/
 │
-├── Client.java
-├── Server.java
-├── Message.java
-├── RSAUtil.java
-├── DESUtil.java
-├── EncryptionDialog.java
+├── src/
+│   └── securechat/
+│       ├── Client.java              # Client-side chat application
+│       ├── Server.java              # Server-side chat application
+│       ├── Message.java             # Serializable message model
+│       ├── RSAUtil.java             # RSA key generation & encryption utilities
+│       ├── DESUtil.java             # DES encryption/decryption utilities
+│       └── EncryptionDialog.java    # GUI for encryption process
 │
 ├── screenshots/
+│   ├── Client.png
+│   ├── Server.png
+│   ├── Login.png
+│   ├── Alice Keys.png
+│   ├── Bob Keys.png
+│   ├── Chat.png
+│   │
+│   ├── Encryption/
+│   │   ├── Plaintext.png
+│   │   ├── DES_Encryption.png
+│   │   ├── RSA_Key_Wrapping.png
+│   │   └── Ciphertext.png
+│   │
+│   └── Decryption/
+│       ├── Received_Ciphertext.png
+│       ├── RSA_Key_Unwrapping.png
+│       └── DES_Decryption.png
 │
-├── report/
-│   └── SecureChat_Report.pdf
-│
-└── README.md
+├── README.md
+└── .gitattributes
 ```
 
 ---
