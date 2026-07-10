@@ -1,8 +1,10 @@
-==> SecureChat
+# 🔐 SecureChat
 
 A secure real-time messaging application developed in **Java** using **Socket Programming**, **Java Swing**, and a **hybrid cryptographic approach** combining **RSA** and **DES** for end-to-end encrypted communication.
 
-==> Overview
+---
+
+## 📖 Overview
 
 SecureChat enables two users to exchange messages securely over a network. The application uses **RSA (2048-bit)** to securely exchange a **DES session key**, after which all chat messages are encrypted using **DES/CBC/PKCS5Padding** before transmission.
 
@@ -10,13 +12,13 @@ The project demonstrates the implementation of **hybrid encryption**, **client-s
 
 ---
 
-==> Features
+## ✨ Features
 
 - End-to-End Encrypted Messaging
 - RSA-2048 Secure Key Exchange
 - DES/CBC/PKCS5Padding Message Encryption
 - Real-Time Client-Server Communication
-- WhatsApp-inspired Java Swing GUI
+- Java Swing GUI
 - Multiple Client Support
 - Socket Programming using TCP
 - Encryption & Decryption Visualization
@@ -24,7 +26,7 @@ The project demonstrates the implementation of **hybrid encryption**, **client-s
 
 ---
 
-==> Technologies Used
+## 🛠 Technologies Used
 
 - Java
 - Java Swing
@@ -36,22 +38,19 @@ The project demonstrates the implementation of **hybrid encryption**, **client-s
 
 ---
 
-==> Project Structure
+## 📂 Project Structure
 
-```
-==> Project Structure
-
-```
+```text
 SecureChat/
 │
 ├── src/
 │   └── securechat/
-│       ├── Client.java              # Client-side chat application
-│       ├── Server.java              # Server-side chat application
-│       ├── Message.java             # Serializable message model
-│       ├── RSAUtil.java             # RSA key generation & encryption utilities
-│       ├── DESUtil.java             # DES encryption/decryption utilities
-│       └── EncryptionDialog.java    # GUI for encryption process
+│       ├── Client.java
+│       ├── Server.java
+│       ├── Message.java
+│       ├── RSAUtil.java
+│       ├── DESUtil.java
+│       └── EncryptionDialog.java
 │
 ├── screenshots/
 │   ├── Client.png
@@ -78,9 +77,9 @@ SecureChat/
 
 ---
 
-==> Encryption Workflow
+## 🔐 Encryption Workflow
 
-```
+```text
 Sender
    │
    │ Generate DES Session Key
@@ -91,7 +90,7 @@ Encrypt DES Key using Receiver's RSA Public Key
    │
 Send Ciphertext + Encrypted DES Key
    │
-──────────── Network ────────────
+────────────── Network ──────────────
    │
 Receiver decrypts DES Key using RSA Private Key
    │
@@ -102,71 +101,73 @@ Original Message
 
 ---
 
-==> How to Run
+## 🚀 How to Run
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/SecureChat.git
+git clone https://github.com/Ashutosh-789/SecureChat.git
 ```
 
-### 2. Open the project in Eclipse or IntelliJ IDEA
+### 2. Open the Project
 
-### 3. Start the server
+Open the project in **Eclipse** or **IntelliJ IDEA**.
 
-Run
+### 3. Run the Server
 
-```
+Run:
+
+```text
 Server.java
 ```
 
-### 4. Start Client 1
+### 4. Run Client 1
 
-Run
+Run:
 
-```
+```text
 Client.java
 ```
 
 Enter a username.
 
-### 5. Start Client 2
+### 5. Run Client 2
 
-Run
+Run:
 
-```
+```text
 Client.java
 ```
 
 Enter another username.
 
-### 6. Start chatting securely
+### 6. Start Chatting
 
-Click on any message bubble to view the encryption and decryption process.
+Send encrypted messages between clients.
+
+Click on any message bubble to view the complete encryption and decryption process.
 
 ---
 
-==> Learning Outcomes
+## 📚 Learning Outcomes
 
 - Java Socket Programming
-- Multithreading
 - Client-Server Architecture
-- Hybrid Cryptography (RSA + DES)
-- End-to-End Encryption
+- Hybrid Encryption (RSA + DES)
+- Secure Key Exchange
+- Multithreading
 - Java Swing GUI Development
 - Secure Network Communication
 
 ---
 
-
 ## 👨‍💻 Author
 
 **Ashutosh Baliarsingh**
 
-GitHub: https://github.com/Ashutosh-789
-
-LinkedIn: https://linkedin.com/in/ashutosh-baliarsingh-2539432a1
+- GitHub: https://github.com/Ashutosh-789
+- LinkedIn: https://linkedin.com/in/ashutosh-baliarsingh-2539432a1
 
 ---
 
-==> If you found this project useful, consider giving it a star!
+⭐ **If you found this project useful, consider giving it a star!**
